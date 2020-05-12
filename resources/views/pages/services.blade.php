@@ -6,7 +6,7 @@
     <title>Laravel</title>
 </head>
 <body>
-<h1>O mnie</h1>
-<p>To jest aplikacja na zaliczenie przedmiotu. Jacek Koziej</p>
+<h1>Services</h1>
+<p>To jest strona Services</p>
 </body>
 </html>
