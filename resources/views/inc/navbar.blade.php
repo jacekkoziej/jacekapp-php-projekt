@@ -13,7 +13,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/services">Usługi</a>
             </li>
-
+            <li class="nav-item">
+                <a class="nav-link" href="/posts">Blog</a>
+            </li>
         </ul>
 {{--        <form class="form-inline">--}}
 {{--            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />--}}
