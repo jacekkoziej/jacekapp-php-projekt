@@ -18,8 +18,8 @@ class PagesController extends Controller
 
     public function services(){
         $data = array(
-            'title' => 'Usługi',
-            'services' => ['Analiza biznesowa', 'Programowanie w języku Java', 'Analiza systemowa']
+            'title' => 'Umiejętności',
+            'services' => ['Analiza biznesowa', 'Analiza systemowa', 'Programowanie w języku Java', 'Programowanie w języku JavaScript (tak, to dwa różne języki)', 'Szczęśliwy mąż i wkrótce ojciec :)' ]
         );
         return view('pages.services')->with($data);
     }
