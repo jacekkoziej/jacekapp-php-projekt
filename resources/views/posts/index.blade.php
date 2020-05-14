@@ -6,7 +6,7 @@
         @foreach($posts as $posts)
             <div class="card p-3 mt-3 mb-3">
                 <h3><a href="/posts/{{$posts->id}}">{{$posts->title}}</a></h3>
-                <small>Dodano {{$posts->created_at}}</small>
+                <small>Dodano {{$posts->created_at}} przez {{$posts->user->name}}</small>
             </div>
         @endforeach
     @else
