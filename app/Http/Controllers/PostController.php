@@ -82,7 +82,13 @@ class PostController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
+        //check for correct user
+        if(auth()->user()->id !== $post->user_id){
+            return redirect('/posts')->with('error','Nie masz dostępu do tej strony!');
+
+        }
         return view('posts.edit')->with('posts',$post);
+
     }
 
     /**
@@ -116,6 +122,11 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post = Post::find($id);
+        //check for correct user
+        if(auth()->user()->id !== $post->user_id){
+            return redirect('/posts')->with('error','Nie masz dostępu do tej strony!');
+
+        }
         $post->delete();
         return redirect('/posts')->with('success', 'Wpis pomyślnie usunięty!');
     }
